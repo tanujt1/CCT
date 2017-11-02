@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="imgView" fitHeight="61.0" fitWidth="52.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ajax-loader.gif" />
+         </image>
+      </ImageView>
+      <Label id="headerText" layoutX="109.0" layoutY="21.0" prefHeight="17.0" prefWidth="219.0" text="Header">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text id="subText" layoutX="109.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub text" wrappingWidth="251.13671875" />
+   </children>
+</AnchorPane>
