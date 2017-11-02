@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="572.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="526.0" prefWidth="713.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Label layoutX="23.0" layoutY="33.0" text="Jira Id" textFill="#9f9f9f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="jiraId" layoutX="109.0" layoutY="32.0" prefHeight="25.0" prefWidth="171.0" promptText="e.g PTS-1234" />
+            <Label layoutX="336.0" layoutY="31.0" text="Jira Comment" textFill="#9f9f9f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="jiraComment" layoutX="471.0" layoutY="31.0" prefHeight="25.0" prefWidth="373.0" promptText="e.g &quot;Concordion Links&quot;" />
+            <TableView id="jiraTable" layoutX="23.0" layoutY="89.0" prefHeight="412.0" prefWidth="823.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Select" />
+                <TableColumn prefWidth="75.0" text="S.no" />
+                  <TableColumn prefWidth="158.0" text="Package Name" />
+                  <TableColumn prefWidth="514.0" text="File Name" />
+              </columns>
+            </TableView>
+            <CheckBox id="checkSelectAll" layoutX="21.0" layoutY="512.0" mnemonicParsing="false" text="Select All" textFill="#9f9f9f" />
+            <Button id="btnPostToJira" defaultButton="true" layoutX="585.0" layoutY="512.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="119.0" text="Post to JIRA" />
+            <Button id="btnCancel" cancelButton="true" layoutX="716.0" layoutY="512.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" text="Cancel" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

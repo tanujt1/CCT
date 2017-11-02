@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="com.util.fxGUI.controllers.MainUIController" xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER">
+ <Button text="Hello World" onAction="#sayHelloWorld"></Button>
+    <Label GridPane.rowIndex="1" fx:id="helloWorld"></Label>
+</GridPane>
